@@ -14,7 +14,6 @@ int lastd;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-scanf("%d", &n);
 lastd = n % 10;
 
 if (n > 5)
