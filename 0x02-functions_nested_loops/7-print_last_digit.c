@@ -3,10 +3,10 @@
 /**
 * print_last_digit - check the code for Holberton School students.
 *
-* @n: Valor 
+* @n: Valor
 *
 * Return: Always 0.
-*/
+ */
 int print_last_digit(int n)
 {
 	n = n % 10;
