@@ -12,11 +12,10 @@ void print_triangle(int size)
 	int t = size;
 	int space;
 	int hash;
-
+	
 	if (size == 0)
-	{
 		_putchar('\n');
-	}
+
 	while (size > 0)
 	{
 		for (space = 0; space < size - 1; space++)
