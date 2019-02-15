@@ -3,23 +3,31 @@
 /**
 * print_triangle - check the code for Holberton School students.
 *
-*@n: Veces que imprime.
+*@size: space.
 *
 * Return: Always 0.
 */
 void print_triangle(int size)
 {
+	int t = size;
 	int space;
+	int hash;
+
+	if (size == 0)
+		_putchar('\n');
 
 	while (size > 0)
 	{
-		for (space = 0; space <= size; space++)
+		for (space = 0; space < size - 1; space++)
 		{
 			_putchar(' ');
 		}
-		_putchar('#');
+
+		for (hash = 0; hash < t - space; hash++)
+		{
+			_putchar('#');
+		}
 		_putchar('\n');
 		size--;
 	}
-	_putchar('\n');
 }
