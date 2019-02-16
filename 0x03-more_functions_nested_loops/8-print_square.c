@@ -14,19 +14,23 @@ void print_square(int size)
 	int t = size;
 
 	if (size == 0)
-		_putchar('\n');
-
-	while (size > 0)
 	{
-		for (space = 0; space < size - 1; space++)
-		{
-			_putchar('#');
-		}
-		for (hash = 0; hash < t - space; hash++)
-		{
-			_putchar('#');
-		}
-		size--;
 		_putchar('\n');
+	}
+	else
+	{
+		while (size > 0)
+		{
+			for (space = 0; space < size - 1; space++)
+			{
+				_putchar('#');
+			}
+			for (hash = 0; hash < t - space; hash++)
+			{
+				_putchar('#');
+			}
+			size--;
+			_putchar('\n');
+		}
 	}
 }
