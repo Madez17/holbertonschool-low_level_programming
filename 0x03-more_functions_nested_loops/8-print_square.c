@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
 * print_square - check the code for Holberton School students.
 *
