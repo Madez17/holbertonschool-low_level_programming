@@ -9,10 +9,10 @@
 */
 void print_triangle(int size)
 {
-	int t = size;
 	int space;
 	int hash;
-	
+	int t = size;
+
 	if (size == 0)
 		_putchar('\n');
 
