@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-* _puts - Exchange the value
+* _puts - Function string var
 *
-* @a: Value 98
+* @str: String Holberton
 *
 * Return: Always 0.
 */
@@ -13,6 +13,6 @@ void _puts(char *str)
 	{
 		_putchar(*str);
 		str++;
-	}	
+	}
 	_putchar('\n');
 }
