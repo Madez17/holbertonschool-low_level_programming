@@ -1,7 +1,9 @@
 #include "holberton.h"
 
 /**
-* print_alphabet_x10 - check the code for Holberton School students.
+* reset_to_98 - Reasigned value
+*
+* @n: This is a pointers
 *
 * Return: Always 0.
 */
