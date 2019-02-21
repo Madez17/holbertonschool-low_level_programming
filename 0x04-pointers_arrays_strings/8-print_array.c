@@ -4,7 +4,9 @@
 /**
 * print_array - Function that reverse a string
 *
-* @str: String Holberton
+* @a: String Holberton
+*
+* @n: Posicion array
 *
 */
 void print_array(int *a, int n)
@@ -13,9 +15,9 @@ void print_array(int *a, int n)
 
 	for (cont = 0; cont <= n; cont++)
 	{
-			printf("%d", *(a + cont));
+		printf("%d", *(a + cont));
 			if (cont < n)
 				printf(", ");
 	}
-	printf("\n");	
+	printf("\n");
 }

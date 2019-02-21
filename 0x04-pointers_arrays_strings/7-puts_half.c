@@ -15,7 +15,7 @@ void puts_half(char *str)
 	{
 	}
 	if (cont % 2 != 0)
-		divstring = (cont + 1) /2;
+		divstring = (cont + 1) / 2;
 	else
 		divstring = cont / 2;
 
