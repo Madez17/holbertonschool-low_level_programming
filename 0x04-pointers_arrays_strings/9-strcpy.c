@@ -3,9 +3,11 @@
 /**
 * _strcpy - Function that reverse a string
 *
-* @dest: Array
+* @dest: Copy Array
 *
-* @src: copy array
+* @src: Array
+*
+* Return: dest
 *
 */
 
