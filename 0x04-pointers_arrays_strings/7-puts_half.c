@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-  * puts2 - Function that reverse a string
+  * puts_half - Function that reverse a string
   *
   * @str: String Holberton
   *
@@ -9,22 +9,19 @@
 void puts_half(char *str)
 {
 	int cont;
-	int div;
+	int divstring;
 
 	for (cont = 0; *(str + cont) != '\0'; cont++)
 	{
 	}
-	div = cont / 2;
-	for (cont % 2 != 0)
-		div (cont + 1) / 2;
+	if (cont % 2 != 0)
+		divstring = (cont + 1) /2;
 	else
-		div = cont / 2;
-	while (*(str + cont) != '\0')
+		divstring = cont / 2;
+
+	for (cont = divstring; *(str + cont) != '\0'; cont++)
 	{
 		_putchar(*(str + cont));
-		cont++
 	}
-
-	_putchar(10);
-
+	_putchar('\n');
 }
