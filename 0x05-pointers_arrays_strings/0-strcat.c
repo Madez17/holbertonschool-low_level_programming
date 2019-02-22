@@ -18,7 +18,6 @@ char *_strcat(char *dest, char *src)
 	{
 		cont1++;
 	}
-	
 	for (cont2 = 0; *(src + cont2) != '\0'; cont2++)
 	{
 		*(dest + cont1) = *(src + cont2);
