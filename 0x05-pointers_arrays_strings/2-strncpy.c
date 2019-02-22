@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
-  * _strncat - concatenacion.
+  * _strncpy - concatenacion.
   *
   * @dest: dest array
   *
