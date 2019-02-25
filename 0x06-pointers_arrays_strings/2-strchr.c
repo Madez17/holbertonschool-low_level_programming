@@ -1,7 +1,6 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- * _strchr- string.
+ * _strchr - string.
  *
  * @s: Array of elements.
  *
