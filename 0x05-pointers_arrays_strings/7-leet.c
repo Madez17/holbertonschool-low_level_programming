@@ -1,18 +1,18 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * string_toupper- chage posicion elements into array.
+ * leet- Replace letters for numbrs
  *
  * @str: Array of elements.
  *
- * Return: String Uppercase
+ * Return: Replace string.
  */
 char *leet(char *str)
 {
 	int cont, cont1;
 	char lowercase[] = "aeotl";
 	char uppercase[] = "AEOTL";
-	char nums [] = "43071";
+	char nums[] = "43071";
 
 	for (cont = 0; *(str + cont) != '\0'; cont++)
 	{
