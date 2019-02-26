@@ -1,15 +1,15 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _memcpy- memory copy
+ * set_string -  value of a pointer
  *
- * @dest: Array of elements copy.
+ * @s: string s1
  *
- * @n: bytes of the memory
+ * @to: strings2
  *
- * Return: String Uppercase
+ * Return: String
  */
 void set_string(char **s, char *to)
 {
-	_putchar(s);
+	*s = to;
 }
