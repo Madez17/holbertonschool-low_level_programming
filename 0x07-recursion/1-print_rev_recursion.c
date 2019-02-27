@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
- * _puts_recursion - Function.
+ * _print_rev_recursion - Function.
  *
  * @s: Pointer first position array.
  */
+
 void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
