@@ -3,35 +3,35 @@
 #include <stdlib.h>
 
 /**
- * create_array - creaate array asign memory space
- * @size: the address of memory to print
- * @c: char
+ * _strdup - Function that copy my string.
  *
- * Return: Nothing.
+ * @str: string char
+ *
+ * Return: Pointer.
  */
 char *_strdup(char *str)
 {
 	char *p;
-	int iterstr = 0;
+	int lenght = 0;
 	int itercpy;
-	
-	while (str[iterstr] != '\0')
-		iterstr++;
 
-	p = malloc(sizeof(*p) * iterstr + 1);
-	
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	while (str[lenght] != '\0')
+		lenght++;
+
+	p = malloc(sizeof(*p) * lenght + 1);
+
+	for (itercpy = 0; itercpy <= lenght; itercpy++)
+	{
+		p[itercpy] = str[itercpy];
+	}
 	if (!p)
 	{
 		return (NULL);
-	}
-
-	for (itercpy = 0; itercpy <= iterstr; itercpy++)
-	{
-		p[itercpy] = str[iterstr];
 	}
 	return (p);
 }
