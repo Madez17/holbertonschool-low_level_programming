@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 /**
  * array_range - Array.
@@ -10,7 +9,7 @@
  *
  * @max: max value.
  *
- * Return: my pointer.
+ * Return: My pointer.
  */
 
 int *array_range(int min, int max)
@@ -30,10 +29,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	/**if (min > max)
-	{
-		return (NULL);
-	}*/
+
 	for (cont = 0; min <= max; cont++)
 	{
 		p[cont] = min;
