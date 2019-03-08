@@ -3,11 +3,13 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - check the code for Holberton School students.
+ * _calloc - Function.
  *
- * @b: size of lenght
+ * @nmemb: Elements.
  *
- * Return: Always p.
+ * @size: Spaces bytes in my memory
+ *
+ * Return: My pointer.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
