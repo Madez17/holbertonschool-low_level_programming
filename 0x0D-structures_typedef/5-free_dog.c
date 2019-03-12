@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_dog - Function
+ * free_dog - Function
  *
  * @d: structure
  *
