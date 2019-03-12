@@ -2,7 +2,7 @@
 #define DOG
 
 /**
- * free_dog - Data type
+ * struct dog - Data type
  *
  * @char: Name.
  * @float: age.
