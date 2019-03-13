@@ -2,12 +2,12 @@
 
 /**
  * int_index - searches for an integer.
- * 
+ *
  * @array: array elements
  * @size: Lenght string
  * @cmp: Pointer to function
  *
- * Return: 
+ * Return: -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -19,7 +19,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		for (cont = 0; cont < size; cont++)
 		{
 			save = (*cmp)(array[cont]);
-		
+
 			if (save != 0)
 			{
 				return (cont);
