@@ -1,9 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings -
+ * print_strings - Function that prints strings
  *
- * Return: 
+ * @separator: comma and space.
+ * @n: Numbers parameters.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -18,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		for (cont = 0; cont < n; cont++)
 		{
 			p = va_arg(string, char *);
-			
+
 			if (p == NULL)
 			{
 				printf("%p", p);
@@ -32,8 +33,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			{
 				printf("%s", separator);
 			}
-			
-	
 		}
 		printf("\n");
 	}
