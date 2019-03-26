@@ -1,11 +1,18 @@
 #include "lists.h"
 
 /**
- * free_listint -
+ * free_listint - Function free a list
  *
- * Return: 
+ * @head: pointer to structure
  */
 void free_listint(listint_t *head)
 {
+	listint_t *aux;
 
+	while (head != NULL)
+	{
+		aux = head;
+		head = head->next;
+		free(aux);
+	}
 }
