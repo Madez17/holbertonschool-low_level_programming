@@ -17,13 +17,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		free(nAux);
 		return (NULL);
 	}
-	if (nAux != NULL)
-	{
-		nAux->n = n;
-		nAux->next = *head;
-		nAux->prev = NULL;
-		/*(*head)->prev = nAux;*/
-		*head = nAux;
-	}
+	nAux->n = n;
+	nAux->next = *head;
+	nAux->prev = NULL;
+	/*(*head)->prev = nAux;*/
+	*head = nAux;
 	return (nAux);
 }
