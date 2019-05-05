@@ -14,8 +14,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	nAux = malloc(sizeof(dlistint_t));
 	if (nAux == NULL)
 	{
-		return (NULL);
 		free(nAux);
+		return (NULL);
 	}
 	if (nAux != NULL)
 	{
