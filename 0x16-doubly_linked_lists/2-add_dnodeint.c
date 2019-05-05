@@ -22,5 +22,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		*head = nAux;
 		return (nAux);
 	}
-	return (NULL);
+	else
+		return (NULL);
 }
