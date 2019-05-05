@@ -1,16 +1,21 @@
 #include "lists.h"
 
 /**
- * dlistint_len -
+ * dlistint_len - Function iter number nodes
  *
- * Return: 
+ * @h: pointer head to the first node
+ * Return: iter - elements
  */
 size_t dlistint_len(const dlistint_t *h)
 {
+	const dlistint_t *nAux = h;
 	size_t iter = 0;
 
-	for (; h != NULL; h = h->next)
+	while (nAux != NULL)
 	{
-		if (h)
+		nAux = nAux->next;
+		iter++;
 	}
+	return (iter);
+
 }
