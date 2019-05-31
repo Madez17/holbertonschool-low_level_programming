@@ -1,9 +1,13 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set -
+ * hash_table_set - Function to add a new elemnt
  *
- * Return: 
+ * @ht: pointer to hash table
+ * @key: key
+ * @value: value
+ *
+ * Return: success
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -32,8 +36,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
     newNode = malloc(sizeof(hash_node_t*));
     newNode->key = strdup(key);
     newNode->value = strdup(value);
-    newNode->next = aux;
-    aux = newNode;
+    newNode->next = ht->array[index];
     ht->array[index] = newNode;
     return (1);
 }
