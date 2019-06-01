@@ -19,13 +19,13 @@ void hash_table_print(const hash_table_t *ht)
         {
             if (p == 1)
             {
-                printf("'%s':'%s'", aux->key, aux->value);
+                printf("'%s': '%s'", aux->key, aux->value);
                 aux = aux->next;
                 p = 0;
             }
             else
             {
-                printf(",'%s':'%s'", aux->key, aux->value);
+                printf(", '%s': '%s'", aux->key, aux->value);
                 aux = aux->next;
 
             }
