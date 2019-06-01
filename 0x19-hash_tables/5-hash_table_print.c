@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print -
+ * hash_table_print - Function that imprint dictionary
  *
- * Return: 
+ * @ht: pointer to array
  */
 void hash_table_print(const hash_table_t *ht)
 {
