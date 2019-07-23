@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
-*  - Function create a node.
+* binary_tree_preorder - Function create a node.
 * @: Pointer to the parent node of the node to create.
 * @: value to put in the new node.
 * Return: New Node.
