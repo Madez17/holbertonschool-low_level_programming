@@ -2,8 +2,7 @@
 
 /**
 **/
-
-size_t height_left(const binary_tree_t *tree, size_t *count)
+int height_left(const binary_tree_t *tree, int *count)
 {
 	if (tree == NULL)
 		return (*count);
@@ -17,8 +16,7 @@ size_t height_left(const binary_tree_t *tree, size_t *count)
 
 /**
 **/
-
-size_t height_right(const binary_tree_t *tree, size_t *count)
+int height_right(const binary_tree_t *tree, int *count)
 {
 	if (tree == NULL)
 		return (*count);
@@ -37,22 +35,21 @@ size_t height_right(const binary_tree_t *tree, size_t *count)
 * @: value to put in the new node.
 * Return: New Node.
 **/
-
-size_t binary_tree_height(const binary_tree_t *tree)
+int binary_tree_balance(const binary_tree_t *tree)
 {
-        size_t count_left = 0;
-	size_t count_right = 0;
+        int count_left = 0;
+	int count_right = 0;
 
 
 	if (tree == NULL)
 		return (0);
-	
-	count_left = height_left(tree->left, count_left);
-	count_right = height_right(tree->right, count_right);
+
+	count_left = height_left(tree->left, &count_left);
+	count_right = height_right(tree->right, &count_right);
 
 	if (count_left < count_right)
 	{
-		return (count_right);
+		return (count_right - count_left);
 	}
-	return (count_left);
+	return (count_left - count_right);
 }
