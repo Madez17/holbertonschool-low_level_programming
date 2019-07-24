@@ -18,14 +18,14 @@ size_t parent_count(const binary_tree_t *tree, size_t *count)
 }
 
 /**
-* binary_tree_depth - function that measures the depth of a node in binary tree.
+* binary_tree_depth - measures the depth of a node in binary tree.
 * @tree: pointer to the node to measure the depth.
 * Return: depth of the node.
 **/
 
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
-        size_t count = 0;
+	size_t count = 0;
 
 	if (!tree || tree->parent == NULL)
 		return (0);
