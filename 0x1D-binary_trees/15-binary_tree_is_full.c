@@ -3,7 +3,7 @@
 /**
 * height_left - Function count the left submodules
 * @tree: is a pointer to the root node of the tree to measure the size
-* Return: left height tree.
+* Return: 1 if is full, 0 otherwise
 **/
 
 int height_left(const binary_tree_t *tree)
@@ -27,7 +27,7 @@ int height_left(const binary_tree_t *tree)
 /**
 * height_right - Function count the right submodules
 * @tree: is a pointer to the root node of the tree to measure the size
-* Return: Right height tree.
+* Return: 1 if is full, 0 otherwise
 **/
 
 int height_right(const binary_tree_t *tree)
@@ -49,9 +49,9 @@ int height_right(const binary_tree_t *tree)
 
 
 /**
-* binary_tree_height - Function that measures the height of a binary tree
+* binary_tree_is_full - checks if a binary tree is full
 * @tree: Pointer to the parent node of the node to create.
-* Return: height tree.
+* Return: 1 if is full, 0 otherwise
 **/
 
 int binary_tree_is_full(const binary_tree_t *tree)
