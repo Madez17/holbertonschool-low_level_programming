@@ -62,12 +62,12 @@ void number_nodes(const binary_tree_t *tree, int *count)
 /**
 * binary_tree_is_perfect - checks if a binary tree is perfect
 * @tree: pointer to the root node of the tree to measure the balance
-* Return: the difference between the left and the right sides of the tree.
+* Return: 1 if it is perfect, 0 otherwise.
 **/
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	int count, i, pow = 1, n_nodes, height;
-	int count_left = 0, count_right = 0;
+	int i = 0, pow = 1, n_nodes = 0, height = 0;
+	int count = 0, count_left = 0, count_right = 0;
 
 	if (tree == NULL)
 		return (0);
