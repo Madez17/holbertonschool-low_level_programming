@@ -11,32 +11,32 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t left = 0, aux, iter;
+	int left = 0, aux, iter, right;
 
-	size--;
+	right = --size;
 
 	if (array == NULL)
 		return (-1);
 
-	while (left <= size)
+	while (left <= right)
 	{
-		aux = (left + size) / 2;
+		aux = (left + right) / 2;
 		printf("Searching in array:");
-		for (iter = left; iter <= size; iter++)
+		for (iter = left; iter <= right; iter++)
 		{
-			if (iter == size)
-				printf(" %d\n", (int)iter);
+			if (iter == right)
+				printf(" %d\n", iter);
 			else
-				printf(" %d,", (int)iter);
+				printf(" %d,", iter);
 		}
 		if (array[aux] < value)
 		{
 			left = aux + 1;
 		}
 		else if (array[aux] > value)
-			size = aux - 1;
+			right = aux - 1;
 		else
-			return ((int)aux);
+			return (aux);
 	}
 	return (-1);
 }
