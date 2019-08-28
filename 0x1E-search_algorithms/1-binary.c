@@ -36,7 +36,7 @@ int binary_search(int *array, size_t size, int value)
 		else if (array[aux] > value)
 			size = aux - 1;
 		else
-			return (aux);
+			return ((int)aux);
 	}
 	return (-1);
 }
